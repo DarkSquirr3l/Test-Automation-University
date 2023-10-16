@@ -14,6 +14,8 @@ public class SalaryCalculator {
         //Initialize know values
         int salary = 1_000;
         int bonus = 250;
+        int quota = 10;
+
 
         //Get values for the unknown
         System.out.println("How many sales did the employee make this week?");
@@ -22,8 +24,8 @@ public class SalaryCalculator {
         sc.close();
 
         //Bonus calculation
-        if (sales > 9) {
-            int totalBonusPayments = sales / 10;
+        if (sales > quota) {
+            int totalBonusPayments = sales / quota;
             salary += bonus * totalBonusPayments;
         }
         //Output
