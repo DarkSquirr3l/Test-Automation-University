@@ -3,6 +3,7 @@ package chapter3;
 import java.util.Scanner;
 
 public class QuotaCalculator {
+
     public static void main(String[] args) {
 
         // Initialize values we know.
