@@ -24,6 +24,7 @@ public class Challenge {
         while (true) {
             if (userBalance <= 0) {
                 System.out.println("Insufficient funds, please deposit more to continue playing.");
+                break;
             }
 
             //Set up variables and take user bet.
