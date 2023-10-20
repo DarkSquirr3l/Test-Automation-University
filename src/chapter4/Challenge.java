@@ -5,6 +5,15 @@ import java.util.Scanner;
 
 public class Challenge {
 
+    public static void sleep(int seconds) {
+        int milliSeconds = seconds * 1000;
+        try {
+            Thread.sleep(milliSeconds);
+        } catch (Exception e){
+            System.out.println(e);
+        }
+    }
+
     public static void main(String[] args) {
 
         // Initialise known values.
@@ -64,11 +73,17 @@ public class Challenge {
 
             //Dealer dice rolls
             if (userTotal < numberOfSpaces) {
+                System.out.println(" ");
+                sleep(2);
+                System.out.println("DEALERS TURN");
+                System.out.println(" ");
+                sleep(1);
                 for (int i = 0; i < numberOfRolls; i++) {
                     int die = random.nextInt(diceMax) + 1;
                     dealerTotal += die;
                     System.out.println("The dealer rolled " + die + ".");
                     System.out.println("The dealers total is " + dealerTotal + ".");
+                    sleep(2);
                     if (dealerTotal >= dealerMax) {
                         break;
                     }
