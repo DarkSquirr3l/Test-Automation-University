@@ -3,7 +3,7 @@ package chapter4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Challenge {
+public class ChallengeBlackJackDice {
 
     public static void sleep(int seconds) {
         int milliSeconds = seconds * 1000;

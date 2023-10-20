@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Challenge {
+public class ChallengeMakeAPound {
 
     public static void main(String[] args) {
 
