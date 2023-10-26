@@ -3,7 +3,7 @@ package chapter8;
 public class TextProcessor {
 
     public static void main(String[] args){
-       //countWords("I'm looking forward to completing this course!");
+       countWords("I'm looking forward to completing this course!");
         reverseString("Scooby Doo");
     }
 
