@@ -2,9 +2,9 @@ package chapter9;
 
 public class Rectangle {
 
-    private double length;
-    private double width;
-    private double sides = 4;
+    protected double length;
+    protected double width;
+    protected double sides = 4;
 
     public double getLength() {
         return length;
@@ -32,5 +32,9 @@ public class Rectangle {
 
     public double calculatePerimeter(){
         return (2 * length) + (2 * width);
+    }
+
+    public void print() {
+        System.out.println("I am a rectangle.");
     }
 }
