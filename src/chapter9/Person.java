@@ -2,9 +2,9 @@ package chapter9;
 
 public class Person {
 
-    private String name;
-    private int age;
-    private String gender;
+    protected String name;
+    protected int age;
+    protected String gender;
 
     public Person(){
         System.out.println("Person");
