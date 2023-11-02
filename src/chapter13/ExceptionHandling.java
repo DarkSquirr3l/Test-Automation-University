@@ -33,9 +33,7 @@ public class ExceptionHandling {
                 double num = fileReader.nextDouble();
                 System.out.println(num);
             }
-        } catch(FileNotFoundException e){
-            e.printStackTrace();
-        } catch(InputMismatchException e){
+        } catch(FileNotFoundException | InputMismatchException e){ // multiple exceptions, one line
             e.printStackTrace();
         } finally {
             System.out.println("Finally"); // executes every time
